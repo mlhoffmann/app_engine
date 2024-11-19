@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="78fca990874eda50e25285150cbb3553" label="Fornecedores" max_length="40" name="x_snc_fornecedores_fornecedores" type="collection">
+        <element label="Qtd colaboradores" max_length="40" name="qtd_colaboradores" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Descricao" max_length="500" name="descricao" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Logradouro" max_length="40" name="logradouro" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Numero" max_length="40" name="numero" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Complemento" max_length="40" name="complemento" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nome" max_length="40" name="nome" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Em Avaliação" value="em_avalia_o"/>
+                <element inactive_on_update="false" label="Desativado" value="desativado"/>
+                <element inactive_on_update="false" label="Solicitado Onboarding" value="solicitado_onboarding"/>
+                <element inactive_on_update="false" label="Ativo" value="ativo"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Cep" max_length="40" name="cep" type="string"/>
+    </element>
+</database>
