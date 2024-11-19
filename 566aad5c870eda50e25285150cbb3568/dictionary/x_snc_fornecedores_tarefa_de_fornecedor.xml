@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d273ce9c870ede5043c085140cbb358e" label="Tarefa de Fornecedor" max_length="40" name="x_snc_fornecedores_tarefa_de_fornecedor" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <element label="Fornecedor" max_length="32" name="fornecedor" reference="x_snc_fornecedores_fornecedores" type="reference"/>
+        <element label="Justificativa" max_length="40" name="justificativa" type="string"/>
+        <index name="index">
+            <element name="fornecedor"/>
+        </index>
+    </element>
+</database>
